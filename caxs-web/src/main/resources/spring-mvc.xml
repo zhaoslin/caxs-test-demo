@@ -68,7 +68,7 @@
 	
     <!-- 自定义HandlerMethodExceptionResolver -->  
 	<bean id="handlerExceptionResolver"
-		class="AnnotationHandlerMethodExceptionResolver">
+		class="com.caxs.exceptionhandler.AnnotationHandlerMethodExceptionResolver">
 		<property name="defaultErrorView" value="/static/html/error/500.html" />
 		<property name="messageConverters" ref="mappingJacksonHttpMessageConverter" />
 		<property name="exceptionMappings">
