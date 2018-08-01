@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.caxs.caxs.base.service.IUsrRoleService;
+import com.caxs.base.service.IUsrRoleService;
 
 /**
  * Created by kevin on 2017/6/11.

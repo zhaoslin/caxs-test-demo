@@ -13,7 +13,7 @@
     http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
 
-    <context:component-scan base-package="com.caxs.caxs" />
+    <context:component-scan base-package="com.caxs" />
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">

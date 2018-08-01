@@ -16,7 +16,7 @@
 
 	<!-- 启用spring注解 -->
 	<context:annotation-config />
-	<context:component-scan base-package="com.caxs.caxs">
+	<context:component-scan base-package="com.caxs">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 	

@@ -15,7 +15,7 @@
 
 	
 	<!-- 自动扫描且只扫描@Controller -->
-	<context:component-scan base-package="com.caxs.caxs"
+	<context:component-scan base-package="com.caxs"
 		use-default-filters="false">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
