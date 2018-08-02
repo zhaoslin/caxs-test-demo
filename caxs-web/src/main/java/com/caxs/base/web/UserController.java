@@ -1,30 +1,26 @@
 package com.caxs.base.web;
 
 
-import com.caxs.base.domain.User;
-import com.caxs.base.service.IUserService;
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+import com.caxs.base.domain.SUsr;
+import com.caxs.base.service.ISUsrService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 /**
  * Created by lenovo on 2018/8/2.
  */
 @Controller
-@RequestMapping("/user")
-@Scope("prototype")
+@RequestMapping("/base/static")
 public class UserController {
    @Autowired
-    IUserService userService;
+   ISUsrService userService;
 
     @RequestMapping("/login")
-    public String login(User user, HttpServletRequest request){
-        boolean loginType = userService.getUser(user.getUserName(),user.getPassWord());
+    public String login(SUsr user, HttpServletRequest request){
+        boolean loginType = userService.getUser(user.getUsrName(),user.getUsrPassword());
                 if(loginType){
                     request.setAttribute("user",user);
                     return "success";
