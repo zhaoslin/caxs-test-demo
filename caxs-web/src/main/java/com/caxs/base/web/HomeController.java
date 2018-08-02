@@ -22,6 +22,7 @@ public class HomeController {
     @RequestMapping("/index")
     public String index(Model model, HttpServletRequest request) {
         System.out.println(usrRoleService.getUsrRole());
+
         return "index";
     }
 
